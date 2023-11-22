@@ -9,21 +9,21 @@ const inter = Inter({ subsets: ['latin'] });
 export default function Home() {
   return (
     <div>
-      <h1>HomePage</h1>
-      <p>
+      <h1 className={styles.title}>HomePage</h1>
+      <p className={styles.text}>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum,
         unde. Error culpa rem laborum facere! Impedit quisquam maxime beatae
         eligendi, corrupti fugiat, similique odit inventore fuga dolorem velit
         recusandae dolorum.
       </p>
-      <p>
+      <p className={styles.text}>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum,
         unde. Error culpa rem laborum facere! Impedit quisquam maxime beatae
         eligendi, corrupti fugiat, similique odit inventore fuga dolorem velit
         recusandae dolorum.
       </p>
 
-      <Link href="/student">See Student Listing</Link>
+      <Link className={styles.btn} href="/student">See Student Listing</Link>
     </div>
   );
 }
