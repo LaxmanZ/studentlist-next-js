@@ -10,26 +10,26 @@ const NotFound = () => {
     setTimeout(() => {
       // router.go(-1) //means it will go back 1 time
       router.push('/');
-    }, 3000)
-
-  }, [ ]);
+    }, 3000);
+  }, []);
 
   return (
     <>
-    <Head>
-      <title>Zoro | Not Found</title>
-      <meta name="keywords" content="student-list" />
-    </Head>
-    <div className="not-found">
-      <h1>Ooooopss....!</h1>
-      <h2>This Page Cannot Be Found</h2>
-      <p>
-        Go Back To The
-        <Link className="linksss" href="/">
-          Home
-        </Link>
-      </p>
-    </div>
+      {/* adding title to page and key-words for the page  */}
+      <Head>
+        <title>Zoro | Not Found</title>
+        <meta name="keywords" content="student-list" />
+      </Head>
+      <div className="not-found">
+        <h1>Ooooopss....!</h1>
+        <h2>This Page Cannot Be Found</h2>
+        <p>
+          Go Back To The
+          <Link className="linksss" href="/">
+            Home
+          </Link>
+        </p>
+      </div>
     </>
   );
 };
