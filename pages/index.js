@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google';
 import styles from '@/styles/Home.module.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import Link from 'next/link';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -24,6 +25,8 @@ export default function Home() {
         eligendi, corrupti fugiat, similique odit inventore fuga dolorem velit
         recusandae dolorum.
       </p>
+
+      <Link href="/student">See Student Listing</Link>
       <Footer />
     </div>
   );
