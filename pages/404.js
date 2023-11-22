@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Link from 'next/link';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
@@ -14,6 +15,11 @@ const NotFound = () => {
   }, [ ]);
 
   return (
+    <>
+    <Head>
+      <title>Zoro | Not Found</title>
+      <meta name="keywords" content="student-list" />
+    </Head>
     <div className="not-found">
       <h1>Ooooopss....!</h1>
       <h2>This Page Cannot Be Found</h2>
@@ -24,6 +30,7 @@ const NotFound = () => {
         </Link>
       </p>
     </div>
+    </>
   );
 };
 

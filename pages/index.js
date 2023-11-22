@@ -8,7 +8,12 @@ const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
   return (
-    <div>
+    <>
+    <Head>
+      <title>ZORO | Home</title>
+      <meta name="keywords" content="student-list" />
+    </Head>
+      <div>
       <h1 className={styles.title}>HomePage</h1>
       <p className={styles.text}>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum,
@@ -25,5 +30,6 @@ export default function Home() {
 
       <Link className={styles.btn} href="/student">See Student Listing</Link>
     </div>
+    </>
   );
 }

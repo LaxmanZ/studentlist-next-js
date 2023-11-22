@@ -1,5 +1,12 @@
+import Head from "next/head";
+
 const About = () => {
   return (
+    <>
+    <Head>
+      <title>ZORO | About</title>
+      <meta name="keywords" content="About" />
+    </Head>
     <div>
       <h1>About</h1>
       <p>
@@ -15,6 +22,7 @@ const About = () => {
         recusandae dolorum.
       </p>
     </div>
+    </>
   );
 };
 
