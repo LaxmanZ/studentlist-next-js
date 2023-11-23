@@ -18,15 +18,20 @@ nav {
   padding: 10px 0;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-end;
   border-bottom: 1px solid #ddd;
 }
 nav a {
   margin-left: 12px;
 }
+
+nav a:hover {
+  color: green;
+  transition: all 1ms ease-in-out;
+}
+
 nav .logo {
   margin-right: auto;
-  color: green;
 }
 footer {
   display: block;
